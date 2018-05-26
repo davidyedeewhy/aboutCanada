@@ -9,10 +9,15 @@
 /* Begin PBXBuildFile section */
 		BBC24373E3A7700A379002D9 /* Pods_AboutCanada.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26112CA24F67E407DF6B1F9 /* Pods_AboutCanada.framework */; };
 		FB36077620B8E4090086B72D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36077520B8E4090086B72D /* AppDelegate.swift */; };
-		FB36077820B8E4090086B72D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB36077720B8E4090086B72D /* ViewController.swift */; };
 		FB36077B20B8E4090086B72D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB36077920B8E4090086B72D /* Main.storyboard */; };
 		FB36077D20B8E4090086B72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB36077C20B8E4090086B72D /* Assets.xcassets */; };
 		FB36078020B8E40A0086B72D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB36077E20B8E4090086B72D /* LaunchScreen.storyboard */; };
+		FBDF8E8520B8FCAA00B83969 /* READMD.md in Resources */ = {isa = PBXBuildFile; fileRef = FBDF8E8420B8FCAA00B83969 /* READMD.md */; };
+		FBDF8E8C20B8FD7C00B83969 /* CanadaFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF8E8B20B8FD7C00B83969 /* CanadaFactsViewController.swift */; };
+		FBDF8E8F20B8FDDC00B83969 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF8E8E20B8FDDC00B83969 /* NetworkManager.swift */; };
+		FBDF8E9120B933F700B83969 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF8E9020B933F700B83969 /* Fact.swift */; };
+		FBDF8E9420B9476000B83969 /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDF8E9220B9476000B83969 /* FactTableViewCell.swift */; };
+		FBDF8E9520B9476000B83969 /* FactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDF8E9320B9476000B83969 /* FactTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +26,16 @@
 		F26112CA24F67E407DF6B1F9 /* Pods_AboutCanada.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AboutCanada.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB36077220B8E4090086B72D /* AboutCanada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutCanada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB36077520B8E4090086B72D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB36077720B8E4090086B72D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FB36077A20B8E4090086B72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB36077C20B8E4090086B72D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB36077F20B8E40A0086B72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB36078120B8E40A0086B72D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDF8E8420B8FCAA00B83969 /* READMD.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = READMD.md; sourceTree = "<group>"; };
+		FBDF8E8B20B8FD7C00B83969 /* CanadaFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaFactsViewController.swift; sourceTree = "<group>"; };
+		FBDF8E8E20B8FDDC00B83969 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FBDF8E9020B933F700B83969 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
+		FBDF8E9220B9476000B83969 /* FactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
+		FBDF8E9320B9476000B83969 /* FactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +88,67 @@
 		FB36077420B8E4090086B72D /* AboutCanada */ = {
 			isa = PBXGroup;
 			children = (
+				FBDF8E8620B8FD0000B83969 /* Module */,
+				FBDF8E8420B8FCAA00B83969 /* READMD.md */,
 				FB36077520B8E4090086B72D /* AppDelegate.swift */,
-				FB36077720B8E4090086B72D /* ViewController.swift */,
 				FB36077920B8E4090086B72D /* Main.storyboard */,
 				FB36077C20B8E4090086B72D /* Assets.xcassets */,
 				FB36077E20B8E4090086B72D /* LaunchScreen.storyboard */,
 				FB36078120B8E40A0086B72D /* Info.plist */,
 			);
 			path = AboutCanada;
+			sourceTree = "<group>";
+		};
+		FBDF8E8620B8FD0000B83969 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				FBDF8E8720B8FD0A00B83969 /* Fact */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		FBDF8E8720B8FD0A00B83969 /* Fact */ = {
+			isa = PBXGroup;
+			children = (
+				FBDF8E8A20B8FD3800B83969 /* Model */,
+				FBDF8E8920B8FD2F00B83969 /* View */,
+				FBDF8E8820B8FD2500B83969 /* Controller */,
+			);
+			path = Fact;
+			sourceTree = "<group>";
+		};
+		FBDF8E8820B8FD2500B83969 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBDF8E8B20B8FD7C00B83969 /* CanadaFactsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FBDF8E8920B8FD2F00B83969 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBDF8E9220B9476000B83969 /* FactTableViewCell.swift */,
+				FBDF8E9320B9476000B83969 /* FactTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBDF8E8A20B8FD3800B83969 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBDF8E8D20B8FDBC00B83969 /* Service */,
+				FBDF8E9020B933F700B83969 /* Fact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBDF8E8D20B8FDBC00B83969 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FBDF8E8E20B8FDDC00B83969 /* NetworkManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +211,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB36078020B8E40A0086B72D /* LaunchScreen.storyboard in Resources */,
+				FBDF8E8520B8FCAA00B83969 /* READMD.md in Resources */,
 				FB36077D20B8E4090086B72D /* Assets.xcassets in Resources */,
+				FBDF8E9520B9476000B83969 /* FactTableViewCell.xib in Resources */,
 				FB36077B20B8E4090086B72D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,8 +246,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB36077820B8E4090086B72D /* ViewController.swift in Sources */,
+				FBDF8E8F20B8FDDC00B83969 /* NetworkManager.swift in Sources */,
+				FBDF8E8C20B8FD7C00B83969 /* CanadaFactsViewController.swift in Sources */,
+				FBDF8E9420B9476000B83969 /* FactTableViewCell.swift in Sources */,
 				FB36077620B8E4090086B72D /* AppDelegate.swift in Sources */,
+				FBDF8E9120B933F700B83969 /* Fact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
